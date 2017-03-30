@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="B4v-42-XMj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRp-5P-q5a">
+                                <rect key="frame" x="100" y="114" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="H04-c2-JlW"/>
+                                    <constraint firstAttribute="height" constant="30" id="WaF-FO-gOo"/>
+                                </constraints>
+                                <state key="normal" title="allCookie"/>
+                                <connections>
+                                    <action selector="DeleteAllCokie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oii-Ua-wLL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVs-WU-f4g">
+                                <rect key="frame" x="100" y="194" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5a4-As-vgu"/>
+                                    <constraint firstAttribute="height" constant="30" id="xAk-FN-2F3"/>
+                                </constraints>
+                                <state key="normal" title="oneCookie"/>
+                                <connections>
+                                    <action selector="DeleteOneCookie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3My-vE-13u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuv-iY-ASn">
+                                <rect key="frame" x="100" y="274" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5X8-PE-BcN"/>
+                                    <constraint firstAttribute="width" constant="100" id="6dc-H1-z6v"/>
+                                </constraints>
+                                <state key="normal" title="allHuanCun"/>
+                                <connections>
+                                    <action selector="DeleteAllHuanCun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQs-AV-OoT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4h-mN-LjX">
+                                <rect key="frame" x="100" y="354" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="K3G-jV-lJQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="TdD-pI-4sr"/>
+                                </constraints>
+                                <state key="normal" title="oneHuanCun"/>
+                                <connections>
+                                    <action selector="DeleteOneHuanCun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjW-b4-Mnm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hu-JJ-BdF">
+                                <rect key="frame" x="100" y="429" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="ToWebView"/>
+                                <connections>
+                                    <action selector="ToWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbY-64-UHO"/>
+                                    <segue destination="NQk-zz-f6g" kind="push" id="Pzf-tR-CJl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1hu-JJ-BdF" firstAttribute="height" secondItem="x4h-mN-LjX" secondAttribute="height" id="6UC-4B-RyJ"/>
+                            <constraint firstItem="1hu-JJ-BdF" firstAttribute="top" secondItem="x4h-mN-LjX" secondAttribute="bottom" constant="45" id="CtY-MK-mhQ"/>
+                            <constraint firstItem="xRp-5P-q5a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="Gui-Oj-QpV"/>
+                            <constraint firstItem="GVs-WU-f4g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="U2y-XV-wJy"/>
+                            <constraint firstItem="GVs-WU-f4g" firstAttribute="top" secondItem="xRp-5P-q5a" secondAttribute="bottom" constant="50" id="WPR-v6-aqx"/>
+                            <constraint firstItem="yuv-iY-ASn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="bw4-mt-4ED"/>
+                            <constraint firstItem="1hu-JJ-BdF" firstAttribute="trailing" secondItem="x4h-mN-LjX" secondAttribute="trailing" id="gsj-wi-kAS"/>
+                            <constraint firstItem="yuv-iY-ASn" firstAttribute="top" secondItem="GVs-WU-f4g" secondAttribute="bottom" constant="50" id="hMR-za-Qi6"/>
+                            <constraint firstItem="x4h-mN-LjX" firstAttribute="top" secondItem="yuv-iY-ASn" secondAttribute="bottom" constant="50" id="mOC-sg-vtS"/>
+                            <constraint firstItem="xRp-5P-q5a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="qep-8P-0ds"/>
+                            <constraint firstItem="1hu-JJ-BdF" firstAttribute="width" secondItem="x4h-mN-LjX" secondAttribute="width" id="scK-Fb-YNt"/>
+                            <constraint firstItem="x4h-mN-LjX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="vBc-fu-2VH"/>
+                            <constraint firstItem="1hu-JJ-BdF" firstAttribute="leading" secondItem="x4h-mN-LjX" secondAttribute="leading" id="zSo-ih-Jgv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vmu-zo-Lwt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663.5" y="136.5"/>
+        </scene>
+        <!--WebVC-->
+        <scene sceneID="IJH-lO-2TF">
+            <objects>
+                <viewController id="NQk-zz-f6g" customClass="WebVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tyc-69-JB2"/>
+                        <viewControllerLayoutGuide type="bottom" id="TWs-WF-yFv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MIc-bT-WVw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGD-Uz-fUE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nGD-Uz-fUE" firstAttribute="leading" secondItem="MIc-bT-WVw" secondAttribute="leading" id="IOM-fq-SzT"/>
+                            <constraint firstItem="TWs-WF-yFv" firstAttribute="top" secondItem="nGD-Uz-fUE" secondAttribute="bottom" id="VA8-k0-D5d"/>
+                            <constraint firstAttribute="trailing" secondItem="nGD-Uz-fUE" secondAttribute="trailing" id="dFl-NK-QWM"/>
+                            <constraint firstItem="nGD-Uz-fUE" firstAttribute="top" secondItem="Tyc-69-JB2" secondAttribute="bottom" id="jA9-eR-7eS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lbF-Qy-fcz"/>
+                    <connections>
+                        <outlet property="BigWebView" destination="nGD-Uz-fUE" id="Iet-T7-b6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqq-W9-tZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108.5" y="136.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oFy-U7-5VT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B4v-42-XMj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tc4-Me-BD3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="umK-0p-Sg1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nca-eM-BlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.5" y="136.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
