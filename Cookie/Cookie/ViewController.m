@@ -73,4 +73,34 @@
     NSLog(@"点击跳转");
 }
 
+
+/*
+ 
+ 加载某个url的时候添加cookie 如果WKWebView在加载url的时候需要添加cookie，需要先手动获取当前NSHTTPCookieStorage中的所有cookie，然后将cookie放到NSMutableURLRequest请求头中
+ 
+ - (void)loadRequestWithUrlString:(NSString *)urlString {
+ 
+ // 在此处获取返回的cookie
+ NSMutableDictionary *cookieDic = [NSMutableDictionary dictionary];
+ 
+ NSMutableString *cookieValue = [NSMutableString stringWithFormat:@""];
+ NSHTTPCookieStorage *cookieJar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+ 
+ for (NSHTTPCookie *cookie in [cookieJar cookies]) {
+ [cookieDic setObject:cookie.value forKey:cookie.name];
+ }
+ 
+ // cookie重复，先放到字典进行去重，再进行拼接
+ for (NSString *key in cookieDic) {
+ NSString *appendString = [NSString stringWithFormat:@"%@=%@;", key, [cookieDic valueForKey:key]];
+ [cookieValue appendString:appendString];
+ }
+ 
+ NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+ [request addValue:cookieValue forHTTPHeaderField:@"Cookie"];
+ 
+ [self loadRequest:request];
+ }
+ */
+
 @end
